@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>
+	DBMS Project Team 3
+</title>
+<meta charset="utf-8">
+<meta name = "viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css"> 
+	td
+	{
+		height: 50px;
+		padding: 10px;
+		font-size: 20px;
+	}
+</style>
+</head>
+<body>
+<header>
+	<h1>
+		Township Management System 
+	</h1>
+</header>
+<section>
+	<nav_bar>
+		<ul>
+			<li> <a class="active" href="index.html"> Home </a> </li>
+			<li> <a href="#"> About </a> </li>
+			<li> <a href="login.html"> Login </a> </li>
+			<li> <a href="buy.html"> Looking to Buy? </a> </li>
+			<li> <a href="sale.html"> Looking to Sell? </a> </li>
+			<li> <a href="#"> Contact Us </a> </li>
+		</ul>
+	</nav_bar>
+	<main_content style="height:  750px">
+		<div class="container">
+			<form method="post" action="sellHome.php" enctype="multipart/form-data">
+				<table>
+					<tr>
+						<td> Sellers Name </td>
+						<td> <input type="text" name="Sname" id="Sname" size="25"> </td>
+					</tr>
+					<tr>
+						<td>  Sellers Phone Number </td>
+						<td> <input type="text" name="Snumber" id="Snumber" size="25"> </td>
+					</tr>
+					<tr>
+						<td> Sellers Address </td>
+						<td> <input type="text" name="Saddr" id="Saddr" size="25"> </td>
+					</tr>
+					<tr>
+						<td> House Size </td>
+						<td> <input type="text" name="Size" id="Size" size="25"> </td>
+					</tr>
+					<tr>
+						<td> House Price </td>
+						<td> <input type="text" name="Price" id="Price" size="25"> </td>
+					</tr>
+					<tr>
+						<td> Select Image to Upload </td>
+						<td> <input type="file" name="house" id="house"> </td>
+					<tr>
+						<td colspan="2" align="center"> <input type="submit" value="Put for Sale"> </td>
+					</tr>
+				</table>
+			</form> 
+		</div>
+	</main_content>
+</section>
+<footer>
+	Copyright to 
+	Amrita School of Engineering 
+</footer>
+</body>
+</html>
